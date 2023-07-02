@@ -14,3 +14,7 @@ StartDate date
 ---UC3 Insert Data In Table---
 insert into EmployeePayRoll values('Twiney', 35000, getdate());
 insert into EmployeePayRoll (Name, StartDate)values('khushi', getdate());
+
+---UC4 Fetch or Retrieve Data---
+select * from EmployeePayRoll
+select Name, Salary from EmployeePayRoll where Name='khushi'
