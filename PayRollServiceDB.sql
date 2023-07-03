@@ -26,3 +26,8 @@ select * from EmployeePayRoll where Name='khushi'
 select * from EmployeePayRoll where StartDate between '2000-01-01' and getDate();
 --using cast is optional---
 select * from EmployeePayRoll where StartDate between cast('2000-01-02' as date) and getDate();
+update EmployeePayRoll set StartDate='1996-05-06', Salary=65000 where Name='khushi'
+
+---UC6 Add gender column and update gender column based on employee's data---
+alter table EmployeePayRoll add Gender char(1);
+update EmployeePayRoll set Gender='M'
