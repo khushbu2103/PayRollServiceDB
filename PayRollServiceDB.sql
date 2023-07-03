@@ -17,4 +17,12 @@ insert into EmployeePayRoll (Name, StartDate)values('khushi', getdate());
 
 ---UC4 Fetch or Retrieve Data---
 select * from EmployeePayRoll
-select Name, Salary from EmployeePayRoll where Name='khushi'
+
+---Update Query---
+update EmployeePayRoll set StartDate='05-03-2010', Salary= 52000 where Name='khushi';
+
+---UC5 fetch specific employee data and fetch all employee data based on date range---
+select * from EmployeePayRoll where Name='khushi'
+select * from EmployeePayRoll where StartDate between '2000-01-01' and getDate();
+--using cast is optional---
+select * from EmployeePayRoll where StartDate between cast('2000-01-01' as date) and getDate();
