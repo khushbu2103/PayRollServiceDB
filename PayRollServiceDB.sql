@@ -25,4 +25,4 @@ update EmployeePayRoll set StartDate='05-03-2010', Salary= 52000 where Name='khu
 select * from EmployeePayRoll where Name='khushi'
 select * from EmployeePayRoll where StartDate between '2000-01-01' and getDate();
 --using cast is optional---
-select * from EmployeePayRoll where StartDate between cast('2000-01-01' as date) and getDate();
+select * from EmployeePayRoll where StartDate between cast('2000-01-02' as date) and getDate();
